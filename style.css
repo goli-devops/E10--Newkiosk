@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow-y: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background-color: gainsboro;
+  color: #0a4211;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3vw;
+  line-height: 1.5;
+}
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: start;
+  font-weight: 600;
+  font-family: inherit;
+  color: #0a4211;
+  border: 3px solid #125c1c;
+}
+
+td {
+  height: calc(90vh / 15);
+  /* Adjust based on how many rows you have */
+  padding: 0 8px;
+}
+th {
+  text-align: start;
+  font-weight: 700;
+  padding: 12px 8px;
+  font-family: inter;
+}
+
+.small-text {
+  font-weight: 600;
+  font-size: 15px;
+  display: block;
+}
+
+.modal,
+.modal2 {
+  position: relative;
+  width: 100%;
+  background-repeat: repeat;
+  /* display: inline-block; */
+}
+.modal-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rates,
+.los {
+  width: 370vw;
+}
+
+.room-type,
+.los,
+.rates,
+.week-el {
+  border: 2px solid #125c1c;
+  font-family: inter;
+  font-weight: 700;
+}
+.rates {
+  background-color: transparent;
+}
+.room-type,
+.los,
+.week-el {
+  background-color: transparent;
+}
+.date-el {
+  width: 30%;
+  background-color: #0a4211;
+  color: whitesmoke;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.weekday,
+.weekend {
+  display: none;
+}
+.watermark {
+  width: 600px;
+  position: fixed;
+  top: 150px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: -1;
+  opacity: 0.1;
+}
+.rooms-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  text-align: center;
+  /* background-color: #0a4211; */
+}
+.room-box {
+  width: 150px;
+}
+.room-pic {
+  width: 100%;
+  height: 90px;
+  background-size: cover;
+  /* border-radius: 10px; */
+  /* border: 4px solid #0a4211; */
+}
+.valid {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 20px;
+}
+/* Responsive Design for All Desktop Screens */
+
+
+/* Make the picture column wider */
+/* .room-box {
+  width: min(260px, 18vw);
+} */
+
+/* Force images to be landscape and fill the frame nicely */
+/* .room-pic,
+td img.room-pic {
+
+  width: 100%;
+  aspect-ratio: 16 / 9;   
+  object-fit: cover;     
+  object-position: center;
+  display: block;
+ 
+} */
+
+/* If the image sits directly in a table cell, you can widen that cell */
+/* td.picture-cell {
+  width: min(280px, 20vw);
+} */
